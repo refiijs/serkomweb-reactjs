@@ -1,0 +1,92 @@
+/* Menambahkan margin untuk tabel */
+.table-container {
+  margin: 20px auto;
+  max-width: 90%; /* Batasan lebar agar tidak terlalu lebar */
+  background-color: none;
+  border-radius: 10px;
+  padding: 30px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+/* Header tabel dengan warna kontras */
+.table th {
+  background-color: #a01818;
+  color: white;
+  text-align: center;
+  padding: 12px;
+}
+
+/* Border untuk tabel */
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.table td,
+.table th {
+  border-bottom: 1px solid #dee2e6;
+  text-align: center;
+  padding: 10px;
+}
+
+.table tr:hover {
+  background-color: #ffffff;
+}
+
+/* Mengubah font dan warna untuk setiap baris tabel */
+.table tbody tr {
+  transition: all 0.3s ease-in-out;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #fffcfc;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Mengubah style pesan kosong */
+.no-data {
+  text-align: center;
+  font-size: 1.2em;
+  color: #6c757d;
+  padding: 20px;
+}
+
+/* Menambahkan style untuk judul */
+.table-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #302f2f;
+}
+/* Atur tampilan ikon PDF */
+.pdf-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem; /* Ukuran ikon */
+  color: #d9534f; /* Warna merah untuk ikon PDF */
+  text-decoration: none;
+}
+
+/* Efek hover pada ikon PDF */
+.pdf-icon:hover {
+  color: #c9302c; /* Warna merah lebih gelap saat hover */
+}
+
+/* Atur tampilan jika tidak ada berkas */
+.no-file {
+  color: #6c757d; /* Warna teks abu-abu */
+  font-style: italic;
+}
+
+/* Pengaturan padding tabel */
+.table td {
+  padding: 10px;
+}

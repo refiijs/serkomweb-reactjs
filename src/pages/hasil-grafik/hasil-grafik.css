@@ -1,0 +1,51 @@
+.chart-container {
+  padding: 30px;
+}
+
+.chart-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  color: #333333; /* Neutral, dark color */
+}
+
+.no-data {
+  text-align: center;
+  color: #ff6b6b; /* Softer red for emphasis */
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.chart {
+  position: relative;
+  height: 400px;
+}
+
+/* Bar chart styles */
+.chart .bar {
+  background-color: #c9302c; /* Green for bars */
+  border: none;
+}
+
+/* Line chart styles */
+.chart .line {
+  stroke: #c9302c; /* Soft blue for lines */
+  stroke-width: 3;
+}
+
+/* Point styles for line charts */
+.chart .point {
+  fill: #ff9800; /* Orange for data points */
+  stroke: #ffffff;
+  stroke-width: 2;
+}
+
+@media (max-width: 576px) {
+  .chart-title {
+    font-size: 1.5rem;
+  }
+  .no-data {
+    font-size: 1.2rem;
+  }
+}

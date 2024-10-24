@@ -1,0 +1,107 @@
+/* Mengatur gaya untuk container utama */
+.form-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 50px;
+  border-radius: 10px;
+  background: #fcfcfc;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk heading */
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+  color: #343a40;
+  font-weight: bold;
+}
+
+/* Gaya untuk label */
+.form-label {
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #495057;
+}
+
+/* Gaya input dan select */
+.form-control,
+.form-select {
+  border-radius: 5px;
+  height: 45px;
+  font-size: 16px;
+  padding: 10px;
+  box-shadow: none;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #a01818;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Styling untuk tombol */
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-bottom: 10px; /* Tambahkan jarak antar tombol */
+}
+
+button[type="submit"] {
+  background-color: #a01818;
+  color: white;
+  border: none;
+}
+
+button[type="submit"]:disabled {
+  background-color: #a01818;
+  color: white;
+  border: none;
+}
+
+button[type="submit"]:hover {
+  background-color: #f53b3b;
+}
+
+button[type="button"] {
+  background-color: white; /* Warna tombol batal putih */
+  color: #a01818; /* Warna teks merah */
+  border: 1px solid #a01818 !important; /* Border merah */
+}
+
+button[type="button"]:hover {
+  background-color: #a01818; /* Warna background merah saat hover */
+  color: white; /* Teks putih saat hover */
+}
+
+/* Menambahkan jarak antar elemen form */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Gaya untuk tombol ketika dinonaktifkan */
+button[disabled] {
+  background-color: #c0c0c0;
+  pointer-events: none; /* Mencegah klik pada tombol */
+  cursor: default;
+}
+
+/* Gaya untuk pesan status */
+.status-message {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #28a745;
+}
+
+/* Gaya khusus untuk menambahkan jarak antara tombol */
+.button-group {
+  display: flex;
+  justify-content: space-between; /* Mengatur tombol berjauhan */
+}

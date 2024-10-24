@@ -1,0 +1,98 @@
+/* Navbar CSS */
+.navbar {
+  padding-block: 0 !important;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: #ffffff; /* Background default */
+  width: 100%; /* Pastikan navbar melebar sepenuhnya */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+}
+
+.navbar.bg-custom {
+  background-color: var(--navbar-bg-color, #ffffff); /* Custom background */
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 600;
+  max-width: 142px;
+}
+
+.navbar-brand img {
+  width: 80px; /* Ukuran logo */
+  height: 50px; /* Tinggi logo */
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between; /* Spasi antara brand dan menu */
+  align-items: center; /* Penyelarasan vertikal */
+  padding-left: 0; /* Hilangkan padding default pada container */
+  padding-right: 0;
+}
+
+.navbar-nav {
+  display: flex; /* Tampilkan menu sebagai flexbox */
+  margin-left: auto; /* Pindahkan menu ke kanan */
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #3b3b3b;
+  font-weight: 400;
+  margin-right: 20px; /* Jarak antar menu */
+  padding: 10px 15px; /* Tambah padding agar lebih responsif */
+  transition: color 0.3s ease-in-out; /* Transisi untuk hover */
+}
+
+.nav-link:last-child {
+  margin-right: 0; /* Hilangkan margin kanan pada menu terakhir */
+}
+
+.nav-link:hover {
+  color: #e44444 !important; /* Ubah warna hover menjadi merah */
+  text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #cc1414 !important;
+  font-weight: bold;
+  border-bottom: 2px solid #cc1414; /* Garis bawah merah untuk menu aktif */
+}
+
+.navbar-brand img {
+  width: 90px;
+  height: 70px; /* Pastikan ukuran logo tetap */
+}
+
+.btn-danger {
+  background-color: #a01818;
+  color: #ffffff !important; /* Pastikan warna font putih */
+  border: none;
+  padding: 10px 18px !important;
+  font-weight: 600;
+}
+
+.btn-danger:hover {
+  background-color: #e44444; /* Warna latar saat hover */
+  color: #ffffff !important; /* Warna font tetap putih saat hover */
+}
+
+@media (max-width: 992px) {
+  /* Responsif untuk layar kecil */
+  .nav-link {
+    margin-right: 10px; /* Sesuaikan jarak antar menu */
+    padding: 8px 10px; /* Sesuaikan padding pada layar kecil */
+  }
+
+  .navbar-brand img {
+    width: 70px; /* Ukuran logo lebih kecil pada mobile */
+    height: 50px;
+  }
+
+  .btn-danger {
+    padding: 6px 12px; /* Tombol lebih kecil pada layar kecil */
+  }
+}

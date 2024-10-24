@@ -1,0 +1,29 @@
+.hero-section {
+  background: url("../../assets/img/hero-img.png") no-repeat center center;
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1; /* Overlay tetap di bawah teks */
+}
+
+.container {
+  position: relative;
+  z-index: 2; /* Teks muncul di atas overlay */
+  padding: 8px; /* Memberikan sedikit ruang pada kontainer */
+}
+
+.text-light p {
+  color: #fff;
+}
